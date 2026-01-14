@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Coaching - Greg Fraser | For Product Leaders & Tech Executives</title>
+    <meta name="description" content="1:1 executive coaching for product leaders and tech executives. Build trust-based relationships, navigate complexity with confidence, and lead authentically. 3x CPO, Wharton MBA, certified coach.">
+    <meta name="keywords" content="executive coaching, leadership coaching, product leader coach, tech executive coach, CPO coaching, career coaching">
+    <meta name="author" content="Greg Fraser">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Executive Coaching - Greg Fraser">
+    <meta property="og:description" content="1:1 executive coaching for product leaders. Lead with confidence, clarity, and authenticity.">
+    <meta property="og:url" content="https://gregfraser.com/coaching.html">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: white;
+            border-top: 4px solid #1E3A5F;
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 1000; padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1E3A5F; text-decoration: none; }
+        
+        .nav-links { 
+            display: flex; gap: 2rem; list-style: none; 
+            align-items: center;
+        }
+        
+        .nav-links a { 
+            color: #2C3E50; text-decoration: none; 
+            font-weight: 500; transition: color 0.3s; 
+        }
+        
+        .nav-links a:hover { color: #D46B56; }
+
+        .nav-links a.active {
+            color: #1E3A5F;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* CTA Button styling for Contact nav item */
+        .nav-links .nav-cta {
+            background: #D46B56; color: white;
+            padding: 0.6rem 1.5rem; border-radius: 6px;
+            font-weight: 600; transition: all 0.3s;
+        }
+
+        .nav-links .nav-cta:hover {
+            background: #C05A48; color: white;
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            margin-top: 80px; min-height: 60vh; display: flex; align-items: center;
+            background: #E8EAED;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.9rem; font-weight: 600; color: #D46B56;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;
+        }
+
+        .hero-container {
+            max-width: 1200px; margin: 0 auto; padding: 2rem 2rem;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.9rem; font-weight: 600; color: #D46B56;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;
+        }
+
+        .hero-headline {
+            font-size: 3rem; font-weight: 700; line-height: 1.2;
+            color: #1E3A5F; margin-bottom: 1.5rem;
+        }
+
+        .hero-subheadline {
+            font-size: 1.3rem; color: #1E3A5F; margin-bottom: 2rem; font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.1rem; color: #2C3E50; margin-bottom: 1.5rem; line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block; background: #D46B56; color: white;
+            padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none;
+            font-weight: 600; font-size: 1.1rem; transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(212, 107, 86, 0.25);
+        }
+
+        .cta-button:hover {
+            background: #C05A48; transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 107, 86, 0.35);
+        }
+
+        .photo-frame {
+            width: 100%; max-width: 450px; aspect-ratio: 3/4;
+            border-radius: 16px; overflow: hidden;
+            box-shadow: 0 20px 60px rgba(30, 58, 95, 0.15);
+            background: #e0e0e0; display: flex; align-items: center;
+            justify-content: center; color: #999;
+        }
+
+        section { padding: 5rem 0; }
+        .section-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .section-headline {
+            font-size: 2.5rem; font-weight: 700; color: #1E3A5F;
+            margin-bottom: 3rem; text-align: center;
+        }
+
+        .trust-bar {
+            padding: 2rem 0; background: white; border-bottom: 1px solid #e5e5e5;
+        }
+
+        .trust-label {
+            font-size: 0.9rem; font-weight: 600; color: #1E3A5F;
+            text-transform: uppercase; letter-spacing: 1px;
+            margin-bottom: 1.5rem; text-align: center;
+        }
+
+        .company-logos {
+            display: flex; justify-content: center; align-items: center;
+            gap: 3rem; flex-wrap: wrap;
+        }
+
+        .company-logo {
+            font-size: 1.3rem; font-weight: 700; color: #6C757D;
+            opacity: 0.8; transition: all 0.3s;
+        }
+
+        .company-logo:hover { color: #1E3A5F; opacity: 1; }
+
+        .challenge { background: #F5F7FA; }
+        
+        .challenge-intro {
+            font-size: 1.15rem; color: #2C3E50; margin-bottom: 2.5rem;
+            line-height: 1.8; max-width: 900px; margin-left: auto;
+            margin-right: auto; text-align: center;
+        }
+
+        .challenge-list {
+            display: grid; gap: 2rem; max-width: 900px; margin: 0 auto 3rem;
+        }
+
+        .challenge-item {
+            padding: 1.5rem; background: white; border-radius: 8px;
+            border-left: 4px solid #D46B56; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .challenge-closing {
+            font-size: 1.15rem; color: #2C3E50; line-height: 1.8;
+            max-width: 900px; margin: 0 auto; text-align: center;
+        }
+
+        .challenge-closing strong { color: #1E3A5F; }
+
+        .transformation { background: white; }
+        
+        .transformation-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 3rem; margin-bottom: 4rem;
+        }
+
+        .transformation-icon {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, #D46B56 0%, #C05A48 100%);
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 1.5rem;
+            font-size: 2rem; color: white;
+        }
+
+        .transformation-card { text-align: center; }
+        .transformation-card h3 {
+            font-size: 1.5rem; color: #1E3A5F; margin-bottom: 1rem;
+        }
+        
+        .transformation-card ul { list-style: none; text-align: left; }
+        .transformation-card li {
+            color: #2C3E50; margin-bottom: 0.75rem;
+            padding-left: 1.5rem; position: relative; line-height: 1.6;
+        }
+        
+        .transformation-card li:before {
+            content: "•"; color: #D46B56; font-weight: bold;
+            position: absolute; left: 0;
+        }
+
+        .experience-text {
+            max-width: 900px; margin: 0 auto; font-size: 1.05rem;
+            line-height: 1.8; color: #2C3E50;
+        }
+        
+        .experience-text p { margin-bottom: 1.5rem; }
+
+        .testimonials { background: #1E3A5F; color: white; }
+        
+        .testimonial-featured {
+            background: white; padding: 3rem; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 900px; margin: 0 auto 4rem;
+            border-left: 4px solid #D46B56;
+        }
+
+        .testimonial-quote {
+            font-size: 1.25rem; line-height: 1.8; color: #2C3E50;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600; color: #1E3A5F; font-size: 1.1rem;
+        }
+
+        .testimonial-role { color: #6C757D; font-size: 0.95rem; }
+
+        .section-headline.testimonial-headline {
+            color: white;
+        }
+
+        .testimonial-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white; padding: 2rem; border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .testimonial-card .testimonial-quote { font-size: 1rem; }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1E3A5F 0%, #152B45 100%);
+            color: white; text-align: center;
+        }
+
+        .cta-section .section-headline { color: white; }
+        .cta-section p {
+            font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.5rem;
+            line-height: 1.7; color: rgba(255,255,255,0.9);
+        }
+
+        .how-it-works { background: white; }
+        
+        .how-intro {
+            max-width: 900px; margin: 0 auto 3rem;
+            font-size: 1.1rem; line-height: 1.8; color: #2C3E50;
+        }
+
+        .focus-areas-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 3rem; max-width: 1100px; margin: 0 auto 4rem;
+        }
+
+        .focus-category {
+            background: #F5F7FA; padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .focus-category h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .focus-category ul { list-style: none; }
+
+        .focus-category li {
+            color: #2C3E50; margin-bottom: 0.75rem;
+            padding-left: 1.5rem; position: relative; line-height: 1.6;
+        }
+
+        .focus-category li:before {
+            content: "•"; color: #D46B56; font-weight: bold;
+            position: absolute; left: 0;
+        }
+
+        .how-works-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem; max-width: 1100px; margin: 0 auto 3rem;
+        }
+
+        .how-works-item h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .how-works-item p {
+            color: #2C3E50; line-height: 1.7;
+        }
+
+        .how-works-container {
+            background: #F5F7FA;
+            padding: 5rem 0;
+            margin: 5rem 0 0;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            width: 100vw;
+        }
+
+        .how-works-container > * {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .how-works-headline {
+            color: #1E3A5F; font-size: 2rem;
+            margin-bottom: 3rem; text-align: center;
+            font-weight: 600;
+        }
+
+        .approach-text {
+            max-width: 900px; margin: 0 auto;
+            font-size: 1.05rem; line-height: 1.8; color: #2C3E50;
+        }
+
+        .approach-text h3 {
+            color: #1E3A5F; font-size: 1.5rem;
+            margin: 2.5rem 0 1rem; font-weight: 600;
+        }
+
+        .approach-text h3:first-child { margin-top: 0; }
+
+        .approach-text p { margin-bottom: 1.5rem; }
+
+        .investment-note {
+            max-width: 900px !important; 
+            margin: 3rem auto 0;
+            padding: 2rem; 
+            background: white; 
+            border-radius: 8px;
+            border-left: 4px solid #D46B56;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .investment-note h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .investment-note p {
+            color: #2C3E50; line-height: 1.7; margin-bottom: 0;
+        }
+
+        .about { background: white; }
+        
+        .about-container {
+            max-width: 1200px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 2fr;
+            gap: 4rem; align-items: start;
+        }
+
+        .about-photo {
+            width: 100%; max-width: 400px;
+            aspect-ratio: 3/4; border-radius: 12px;
+            overflow: hidden; box-shadow: 0 10px 40px rgba(30, 58, 95, 0.15);
+            background: #e0e0e0; display: flex;
+            align-items: center; justify-content: center;
+            color: #999; font-size: 1rem;
+        }
+
+        .about-content h3 {
+            color: #1E3A5F; font-size: 1.5rem;
+            margin: 2rem 0 1rem; font-weight: 600;
+        }
+
+        .about-content h3:first-child { margin-top: 0; }
+
+        .about-content p {
+            color: #2C3E50; line-height: 1.8;
+            margin-bottom: 1.5rem; font-size: 1.05rem;
+        }
+
+        .about-content ul {
+            margin: 1rem 0 1.5rem; padding-left: 1.5rem;
+        }
+
+        .about-content li {
+            color: #2C3E50; line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+
+        .credentials {
+            background: #F5F7FA; padding: 2rem;
+            border-radius: 8px; margin: 2rem 0;
+            border-left: 4px solid #D46B56;
+        }
+
+        .credentials h4 {
+            color: #1E3A5F; font-size: 1.1rem;
+            margin-bottom: 0.75rem; font-weight: 600;
+        }
+
+        .credentials ul {
+            margin: 0.5rem 0; padding-left: 1.5rem;
+        }
+
+        .faq { background: #F5F7FA; }
+        
+        .faq-list {
+            max-width: 900px; margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white; padding: 2rem; margin-bottom: 1.5rem;
+            border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            color: #1E3A5F; font-size: 1.2rem;
+            font-weight: 600; margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            color: #2C3E50; line-height: 1.7;
+        }
+
+        .faq-answer p { margin-bottom: 1rem; }
+        .faq-answer p:last-child { margin-bottom: 0; }
+
+        .faq-answer ul {
+            margin: 1rem 0; padding-left: 1.5rem;
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.5rem; line-height: 1.6;
+        }
+
+        @media (max-width: 968px) {
+            .hero-container { grid-template-columns: 1fr; }
+            .hero-headline { font-size: 2.5rem; }
+            .transformation-grid { grid-template-columns: 1fr; }
+            .focus-areas-grid { grid-template-columns: 1fr; }
+            .how-works-grid { grid-template-columns: 1fr; }
+            .about-container { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 640px) {
+            .hero-headline { font-size: 2rem; }
+            .section-headline { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Greg Fraser</a>
+            <ul class="nav-links">
+                <li><a href="coaching.html" class="active">Coaching</a></li>
+                <li><a href="advising.html">Advising</a></li>
+                <li><a href="coaching.html#about">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">Executive Coaching</div>
+                <h1 class="hero-headline">Leading Is Lonely. You Don't Have to Figure It Out Alone.</h1>
+                <p class="hero-subheadline">Executive Coaching for Product Leaders and Tech Executives</p>
+                <p class="hero-description">I help ambitious leaders grow their authentic leadership and become more resourceful. I'm a 3x CPO with 20+ years leading teams at startups and serving clients like Google. I've been in your shoes and I want to help.</p>
+                <p class="hero-description">Without support, the pressure and isolation of executive leadership can take a serious toll. It doesn't have to be this way.</p>
+                <p class="hero-description">As your coach and trusted confidant, I'll help you lead with confidence, clarity, and authenticity.</p>
+                <a href="contact.html" class="cta-button">Let's Talk</a>
+            </div>
+            <div class="photo-frame">[Your Professional Photo]</div>
+        </div>
+    </section>
+
+    <section class="trust-bar">
+        <div class="section-container">
+            <div class="trust-label">Trusted by leaders at</div>
+            <div class="company-logos">
+                <span class="company-logo">Google</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Uber</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Amazon</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Adobe</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Dropbox</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenge">
+        <div class="section-container">
+            <h2 class="section-headline">You're Not Alone</h2>
+            <p class="challenge-intro">Leading at the executive level brings unique challenges that few people truly understand:</p>
+            
+            <div class="challenge-list">
+                <div class="challenge-item"><p>Constant change and uncertainty that leaves you feeling reactive instead of strategic</p></div>
+                <div class="challenge-item"><p>Challenging team dynamics and cross-functional conflicts that drain your energy</p></div>
+                <div class="challenge-item"><p>Imposter syndrome and self-doubt that make you wonder if you're really up to this</p></div>
+                <div class="challenge-item"><p>Isolation at the top with fewer peers who truly understand what you're going through</p></div>
+                <div class="challenge-item"><p>Anxiety and burnout risk from giving everything to your role</p></div>
+                <div class="challenge-item"><p>The weight of decisions that impact people's lives and careers</p></div>
+                <div class="challenge-item"><p>Strained relationships where misalignment or lack of trust make it harder to deliver results</p></div>
+            </div>
+
+            <div class="challenge-closing">
+                <p><strong>These aren't signs of weakness.</strong> They're signs you're pushing yourself to grow in a role that demands everything from you.</p>
+                <p style="margin-top: 1rem;">You don't have to navigate them alone.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="transformation">
+        <div class="section-container">
+            <h2 class="section-headline">Lead Authentically. Make a Bigger Impact. Find Joy.</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 3rem; font-size: 1.1rem; line-height: 1.8;">As your coach, thought partner, truth teller, and trusted confidant, I support you on your leadership journey.</p>
+            
+            <div class="transformation-grid">
+                <div class="transformation-card">
+                    <h3>Gain Perspective & Clarity</h3>
+                    <ul>
+                        <li>Identify your true goals and root challenges</li>
+                        <li>Align decisions with your core values</li>
+                        <li>See your blind spots with fresh eyes</li>
+                    </ul>
+                </div>
+                
+                <div class="transformation-card">
+                    <h3>Evolve Your Leadership</h3>
+                    <ul>
+                        <li>Build trust-based relationships</li>
+                        <li>Navigate complexity with confidence</li>
+                        <li>Delegate and empower others</li>
+                    </ul>
+                </div>
+                
+                <div class="transformation-card">
+                    <h3>Find Your Best Voice</h3>
+                    <ul>
+                        <li>Lead with confidence and authenticity</li>
+                        <li>Reduce anxiety and burnout</li>
+                        <li>Move from surviving to thriving</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-text">
+                <h3 style="color: #1E3A5F; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">What My Clients Experience</h3>
+                <p>My clients tell me their companies see measurable improvements: faster decision-making, stronger team performance, and better cross-functional collaboration. Their teams notice a real change in their leadership as they unblock mental barriers they didn't know they had. They apply new ways of leading that reinvigorate team dynamics.</p>
+                <p>They align their leadership with their values, strengths, vision, and purpose, so work energizes rather than depletes them. They create deeper connection with themselves and others, leading authentically instead of putting on a show. And they finally feel like they're leading in a way that's sustainable and true to who they are, rediscovering the joy and fun in their work.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-container">
+            <h2 class="section-headline testimonial-headline">What Clients Say</h2>
+            
+            <div class="testimonial-featured">
+                <p class="testimonial-quote">"Greg helps you cut through overthinking with insightful questions that stop you in your tracks. You'll feel challenged and supported: the optimal balance for sustainable growth. I wish everyone could work with a coach as effective as Greg."</p>
+                <div class="testimonial-author">Lance Willet</div>
+                <div class="testimonial-role">Chief Product & Technology Officer, Tumblr</div>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"His warmth, emotional intelligence, and Product Leader's curiosity helped me tackle challenges in team leadership, workload, and promotions—always landing on actionable next steps."</p>
+                    <div class="testimonial-author">Rachel Arbit</div>
+                    <div class="testimonial-role">Senior Director of Product, Flatiron Health</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Greg masterfully balances coaching with mentoring. My team has noticed a real change in my leadership since working with him, and I'm a lot happier and more confident."</p>
+                    <div class="testimonial-author">Justin Street</div>
+                    <div class="testimonial-role">Senior Group PM, Dropbox</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"After just two sessions, I noticed a remarkable improvement. Thanks to Greg's guidance, I gained the executive visibility I needed to step into a key leadership role. Most importantly, he helped me have more fun at work."</p>
+                    <div class="testimonial-author">Baylee Mabe</div>
+                    <div class="testimonial-role">Product Lead, Spring Health</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="section-container">
+            <h2 class="section-headline">1:1 Executive Coaching</h2>
+            <p class="how-intro">I partner with founders, executives, and leaders from seed stage startups to public companies. My clients include leaders from Google, Uber, Amazon, Adobe, Dropbox, Atlassian, and fast-growing startups and scale-ups.</p>
+
+            <h3 style="color: #1E3A5F; font-size: 2rem; margin-bottom: 2rem; text-align: center;">What We Focus On</h3>
+            <p class="how-intro">Leaders often seek coaching when they're stepping into bigger roles, when growth outpaces their capabilities, or when the complexity of their challenges demands a new approach.</p>
+            <p class="how-intro">Every coaching relationship is unique, but common themes include:</p>
+
+            <div class="focus-areas-grid">
+                <div class="focus-category">
+                    <h3>Foundation</h3>
+                    <ul>
+                        <li><strong>Conscious leadership</strong>, intentional vs. reactive</li>
+                        <li><strong>Values and strengths alignment</strong></li>
+                        <li><strong>Energizing vs. depleting work</strong></li>
+                    </ul>
+                </div>
+
+                <div class="focus-category">
+                    <h3>Inner Game</h3>
+                    <ul>
+                        <li><strong>Emotional intelligence</strong>, steadiness and trust-based relationships</li>
+                        <li><strong>Fear, imposter syndrome</strong>, and building unshakeable confidence</li>
+                        <li><strong>Habit change</strong>, scaling what works, limiting what doesn't</li>
+                        <li><strong>Stress management</strong>, work-life balance, and burnout prevention</li>
+                    </ul>
+                </div>
+
+                <div class="focus-category">
+                    <h3>Relationships & Communication</h3>
+                    <ul>
+                        <li><strong>Difficult feedback</strong>, conflict resolution, and navigating blind spots</li>
+                        <li><strong>Executive presence</strong>, influence, and powerful communication</li>
+                        <li><strong>Team alignment</strong>, collaboration, and effective delegation</li>
+                        <li><strong>Managing up</strong>, building alliances, and navigating politics</li>
+                    </ul>
+                </div>
+
+                <div class="focus-category">
+                    <h3>Impact</h3>
+                    <ul>
+                        <li><strong>Decision making</strong>, strategic planning, and goal setting</li>
+                        <li><strong>Accountability</strong>, performance, and raising your bar</li>
+                        <li><strong>Company culture</strong>, values, and leading with purpose</li>
+                        <li><strong>Promotions, transitions</strong>, and navigating setbacks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="how-works-container">
+                <h3 class="how-works-headline">How It Works</h3>
+
+                <div class="how-works-grid">
+                <div class="how-works-item">
+                    <h3>Bi-Weekly or Weekly Sessions</h3>
+                    <p>We typically meet every other week (or weekly if preferred), at a consistent day and time. All sessions are remote via video. In our first few sessions, we'll establish your goals and create context for our work together.</p>
+                </div>
+
+                <div class="how-works-item">
+                    <h3>6-12+ Months</h3>
+                    <p>Real transformation takes time. Most clients work with me for 6 to 12+ months to build new habits, shift mindsets, and create lasting change. That said, many clients notice meaningful shifts within the first few sessions.</p>
+                </div>
+
+                <div class="how-works-item">
+                    <h3>Between-Session Support</h3>
+                    <p>I'm available asynchronously via email or text between sessions when you need a quick perspective or sounding board.</p>
+                </div>
+
+                <div class="how-works-item">
+                    <h3>Confidential Partnership</h3>
+                    <p>Everything we discuss is completely confidential. This is your safe space to explore challenges, fears, and aspirations without judgment.</p>
+                </div>
+            </div>
+
+            <div class="approach-text">
+                <h3>My Approach</h3>
+                <p>My work is grounded in a rare combination of deep operational experience, a Wharton MBA, and certified coach training. I've sat in your seat as a 3x CPO, and navigated many of the challenges you're facing.</p>
+
+                <p>I ask questions that cut through the noise and surface what's actually driving your decisions, including the patterns, assumptions, and blind spots you can't see on your own.</p>
+
+                <p>We explore what's actually stopping you. We examine what's driven your success so far, then surface the unconscious habits and beliefs that might now be holding you back. Often these are the very strengths that got you here—perfectionism, self-reliance, always having the answer—that now limit what's possible.</p>
+
+                <p>I help leaders move from reactive to intentional, from overwhelmed to clear, from doubting to confident. You'll build on the patterns that have made you successful while catching the habits that hold you back. Together we create space to become the leader you want to be, not just survive the role you're in.</p>
+
+                <p>I'm playfully provocative. I'll challenge your thinking with humor and directness while being warm and supportive. We focus on both mindset shifts and practical action, addressing mind and body, professional and personal. You'll soften knee-jerk reactions, strengthen your capacity for steady leadership, and make decisions from clarity rather than urgency or fear. We'll experiment and iterate together, creating a safe space to try new approaches and discover what works for you. Between sessions, you'll reflect on insights, practice new behaviors, and test approaches in real situations so the work continues beyond our conversations.</p>
+
+                <p>Clients describe the work as energizing and clarifying, like finally having a trusted partner who's been where you are and knows how to help you grow through it.</p>
+            </div>
+
+            <div class="investment-note">
+                <h3>Investment</h3>
+                <p>Most coaching engagements are company-sponsored as a strategic leadership development investment, which is one of the highest-ROI ways to accelerate executive performance and reduce costly mistakes. Some leaders choose to self-fund. I can help make the business case to your company if needed. Let's discuss what makes sense for your situation during our discovery call.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="section-headline">I've Been in Your Shoes</h2>
+            
+            <div class="about-container">
+                <div class="about-photo">[Your Professional Photo]</div>
+                
+                <div class="about-content">
+                    <p>I'm Greg Fraser, a certified executive coach with 20+ years of tech leadership experience. I know what it's like to navigate the pressure, complexity, and loneliness of executive leadership because I've lived it.</p>
+
+                    <h3>What Makes Me Different</h3>
+                    <p>I bring the rare combination of deep operational experience as a 3x CPO executive, a Wharton MBA, and certified coach training. I understand strategy, cross-functional collaboration, team building, and what it takes to scale. Not just in theory, but from doing it myself.</p>
+                    <p>I'm a change catalyst who helps leaders identify their true goals, root challenges, and limiting assumptions, and respond to feedback. I balance inspiration and objectivity while driving accountability.</p>
+
+                    <h3>My Coaching Philosophy</h3>
+                    <p>I believe every leader has the wisdom and capacity inside them to solve their biggest challenges. My role isn't to tell you what to do. It's to help you access that wisdom, see your blind spots, evolve your mindset, and take bold action.</p>
+                    <p>I'm holistic in my approach: mind and body, professional and personal. I'm warm and supportive, yet playfully provocative—I'll challenge you with humor and honesty. Because real growth happens when you feel both challenged and supported.</p>
+
+                    <div class="credentials">
+                        <h3 style="margin-top: 0; font-size: 1.3rem;">My Background</h3>
+                        
+                        <h4>Executive Experience:</h4>
+                        <ul>
+                            <li>3x Chief Product Officer for high-growth companies (multiple exits)</li>
+                            <li>Business operator who's led Product, Marketing, Data Analytics, Operations, and GM roles</li>
+                            <li>Coached leaders at Google, Uber, Amazon, Fortune 500 companies, and leading startups and scale-ups</li>
+                            <li>VC & PE experience with Bessemer Venture Partners, GV (Google Ventures), First Round Capital, and IAC</li>
+                        </ul>
+
+                        <h4>Education:</h4>
+                        <ul>
+                            <li>Wharton MBA with deep business and strategic acumen</li>
+                        </ul>
+
+                        <h4>Coaching Training & Certifications:</h4>
+                        <ul>
+                            <li>Certified Solutions-Focused Organizational Coach from Solutions Academy (at the PCC level)</li>
+                            <li>Co-Active Training Institute (CTI)</li>
+                            <li>Conscious Leadership Group</li>
+                            <li>Positive Intelligence</li>
+                            <li>Nonviolent Communication (NVC)</li>
+                        </ul>
+                    </div>
+
+                    <h3>My Story</h3>
+                    <p>I've spent my career in the trenches of tech leadership. As a 3x Chief Product Officer for B2B SaaS and consumer tech startups and scale-ups, I've led Product, Design, Data Analytics, and Operations through multiple exits. I've also led Product and Marketing initiatives for major clients including Google, Comcast and American Express.</p>
+                    <p>I've experienced the challenges I help clients navigate: the difficult executive relationships, the moments of self-doubt, the stress of high-stakes decisions, and the loneliness at the top. My empathy and positive energy once helped me transform what was my toughest executive relationship into a trusted partnership. In fact, she now serves as one of my professional references.</p>
+                    <p>That personal transformation, and work with an executive coach, showed me the power of self-awareness, emotional intelligence, and having someone in your corner who truly understands. It's what led me to coaching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="section-container">
+            <h2 class="section-headline">Common Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">How is coaching different from advising, therapy, or talking to a peer or friend?</div>
+                    <div class="faq-answer">
+                        <p>Unlike advising or consulting, where an expert tells you what to do, coaching partners with you to unlock your own wisdom and potential. I ask powerful questions, challenge your assumptions, and hold you accountable to your goals. I may occasionally offer strategic perspective from my 20+ years as a product executive, but the insights and decisions remain yours.</p>
+                        
+                        <p>Unlike therapy, which focuses on healing past wounds, coaching is future-focused and action-oriented. Coaching helps you achieve specific professional goals and evolve as a leader.</p>
+                        
+                        <p>As one Head of Product told me: "Greg changed my view of coaching. He doesn't try to be your path to nirvana—he helps you be a stronger leader and stay sane at the same time."</p>
+                        
+                        <p>Unlike talking to peers, colleagues or friends, I bring neutral expertise without agenda or judgment. I'm not competing with you, don't need anything from you, and have no stake in your company politics. This creates a rare space for complete honesty and clarity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How long does coaching take?</div>
+                    <div class="faq-answer">
+                        <p>Most clients work with me for 6 to 12+ months. Real transformation takes time. You're building new neural pathways, shifting ingrained habits, and evolving how you show up as a leader.</p>
+                        <p>That said, many clients notice meaningful shifts within the first few sessions. The work compounds over time.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why do companies sponsor executive coaching?</div>
+                    <div class="faq-answer">
+                        <p>Executive coaching delivers measurable ROI through:</p>
+                        <ul>
+                            <li><strong>Better decisions, faster</strong> - Fewer revision loops, strategic missteps, and avoidable mistakes.</li>
+                            <li><strong>Stronger teams</strong> - Higher retention and engagement. Leaders who are coached build teams that take ownership and innovate.</li>
+                            <li><strong>Reduced friction</strong> - Faster cross-functional alignment, less executive team conflict, and leaders who collaborate instead of escalate.</li>
+                            <li><strong>Executive retention</strong> - Preventing turnover that disrupts teams and costs 6-12 months of productivity.</li>
+                            <li><strong>CEO leverage</strong> - Less time spent coaching or correcting executives who operate more independently.</li>
+                        </ul>
+                        <p>Most clients have their coaching sponsored by their company as a professional development investment, similar to executive education programs. I can help make the case to your manager, HR, or CEO. Some leaders self-fund.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What if we're not a good fit?</div>
+                    <div class="faq-answer">
+                        <p>Not every coach-client pairing clicks, and that's okay. That's why we start with a discovery call to see if there's mutual fit and chemistry.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Who do you typically work with?</div>
+                    <div class="faq-answer">
+                        <p>I typically work with product / engineering leaders and adjacent roles. My clients are at seed stage+ startups, scale-ups, and established companies. They're ambitious and successful but know they can make a bigger impact and achieve more. They wish they could lead with greater confidence, clarity, ease, and joy.</p>
+                        <p>I've coached leaders across:</p>
+                        <ul>
+                            <li><strong>Roles:</strong> Co-Founder, CPO, CTO, GM, VP/SVP, Director, Group PMs</li>
+                            <li><strong>Functions:</strong> Product, Engineering, Operations, Marketing, Sales</li>
+                            <li><strong>Industries:</strong> SaaS (B2B/B2C), Healthcare, Financial Services, E-commerce / Marketplace, Consumer Tech, Logistics, Tech Platforms, Media, Professional Services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What happens in a typical coaching session?</div>
+                    <div class="faq-answer">
+                        <p>You bring the agenda with whatever is most pressing for you. We might dive deep into a specific challenge you're facing, work through a difficult decision, prepare for a crucial conversation, or explore ongoing patterns in your leadership that aren't serving you.</p>
+                        <p>I'll ask powerful questions, challenge your thinking when appropriate, perhaps offer perspective from my experience, and help you land on clear next steps. You'll leave with both insights and action items.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is everything confidential?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Everything we discuss is completely confidential. Even if your company is paying for coaching, I won't share the content of our conversations without your explicit permission.</p>
+                        <p>The only exception would be if there were concerns about imminent harm to yourself or others, but that's exceptionally rare in executive coaching.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="section-container">
+            <h2 class="section-headline">Ready to Lead with Greater Impact and Less Stress?</h2>
+            <p>Let's explore if we're a good fit. I offer a complimentary discovery call where we'll discuss your current challenges and goals, explore how coaching could support you, and determine if we're the right match.</p>
+            <a href="contact.html" class="cta-button">Let's Talk</a>
+        </div>
+    </section>
+</body>
+</html>

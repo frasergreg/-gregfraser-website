@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Advising - Greg Fraser | Product Strategy & Leadership Development</title>
+    <meta name="description" content="Strategic advising for founders and product leaders. Coaching combined with tactical guidance on product strategy, team building, and operational excellence. 3x CPO with 20+ years experience.">
+    <meta name="keywords" content="product advisor, product strategy consultant, startup advisor, product leadership, team building, OKRs, product-market fit">
+    <meta name="author" content="Greg Fraser">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Strategic Advising - Greg Fraser">
+    <meta property="og:description" content="Strategic advising for founders and product leaders. Accelerate impact with coaching and tactical guidance.">
+    <meta property="og:url" content="https://gregfraser.com/advising.html">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: white;
+            border-top: 4px solid #1E3A5F;
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 1000; padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1E3A5F; text-decoration: none; }
+        
+        .nav-links { 
+            display: flex; gap: 2rem; list-style: none; 
+            align-items: center;
+        }
+        
+        .nav-links a { 
+            color: #2C3E50; text-decoration: none; 
+            font-weight: 500; transition: color 0.3s; 
+        }
+        
+        .nav-links a:hover { color: #D46B56; }
+
+        .nav-links a.active {
+            color: #1E3A5F;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* CTA Button styling for Contact nav item */
+        .nav-links .nav-cta {
+            background: #D46B56; color: white;
+            padding: 0.6rem 1.5rem; border-radius: 6px;
+            font-weight: 600; transition: all 0.3s;
+        }
+
+        .nav-links .nav-cta:hover {
+            background: #C05A48; color: white;
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            margin-top: 80px; min-height: 60vh; display: flex; align-items: center;
+            background: #E8EAED;
+        }
+
+        .hero-container {
+            max-width: 1200px; margin: 0 auto; padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.9rem; font-weight: 600; color: #D46B56;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;
+        }
+
+        .hero-headline {
+            font-size: 3rem; font-weight: 700; line-height: 1.2;
+            color: #1E3A5F; margin-bottom: 1rem;
+        }
+
+        .hero-subheadline {
+            font-size: 1.4rem; color: #1E3A5F; margin-bottom: 2rem; font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.15rem; color: #2C3E50; line-height: 1.8;
+            max-width: 800px; margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block; background: #D46B56; color: white;
+            padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none;
+            font-weight: 600; font-size: 1.1rem; transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(212, 107, 86, 0.25);
+        }
+
+        .cta-button:hover {
+            background: #C05A48; transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 107, 86, 0.35);
+        }
+
+        section { padding: 5rem 0; }
+        .section-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .section-headline {
+            font-size: 2.5rem; font-weight: 700; color: #1E3A5F;
+            margin-bottom: 3rem; text-align: center;
+        }
+
+        .partnership { background: white; }
+        
+        .partnership-text {
+            max-width: 900px; margin: 0 auto; font-size: 1.05rem;
+            line-height: 1.8; color: #2C3E50;
+        }
+        
+        .partnership-text p { margin-bottom: 1.5rem; }
+
+        .results { background: #F5F7FA; }
+        
+        .results-intro {
+            max-width: 800px; margin: 0 auto 3rem;
+            font-size: 1.1rem; line-height: 1.7; color: #2C3E50;
+        }
+
+        .results-list {
+            max-width: 900px; margin: 0 auto 3rem;
+            display: grid; gap: 1rem;
+        }
+
+        .results-list li {
+            background: white; padding: 1.25rem;
+            border-radius: 8px; border-left: 4px solid #D46B56;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            line-height: 1.7;
+        }
+
+        .companies-section {
+            max-width: 800px; margin: 0 auto;
+        }
+
+        .companies-section h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .company-item {
+            margin-bottom: 0.75rem; color: #2C3E50;
+        }
+
+        .focus-areas { background: white; }
+        
+        .focus-intro {
+            max-width: 800px; margin: 0 auto 3rem;
+            font-size: 1.1rem; line-height: 1.7;
+            color: #2C3E50; text-align: center;
+        }
+
+        .focus-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 3rem; max-width: 1100px; margin: 0 auto;
+        }
+
+        .focus-category h3 {
+            color: #1E3A5F; font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .focus-category ul {
+            list-style: none;
+        }
+
+        .focus-category li {
+            color: #2C3E50; margin-bottom: 1rem;
+            padding-left: 1.5rem; position: relative;
+            line-height: 1.6;
+        }
+
+        .focus-category li:before {
+            content: "•"; color: #D46B56; font-weight: bold;
+            position: absolute; left: 0;
+        }
+
+        .difference { background: #F5F7FA; }
+        
+        .difference-text {
+            max-width: 900px; margin: 0 auto;
+            font-size: 1.05rem; line-height: 1.8;
+            color: #2C3E50;
+        }
+        
+        .difference-text p { margin-bottom: 1.5rem; }
+
+        .faq { background: white; }
+        
+        .faq-list {
+            max-width: 900px; margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #F5F7FA; padding: 2rem; margin-bottom: 1.5rem;
+            border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            color: #1E3A5F; font-size: 1.2rem;
+            font-weight: 600; margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            color: #2C3E50; line-height: 1.7;
+        }
+
+        .faq-answer p { margin-bottom: 1rem; }
+        .faq-answer p:last-child { margin-bottom: 0; }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1E3A5F 0%, #152B45 100%);
+            color: white; text-align: center;
+        }
+
+        .cta-section .section-headline { color: white; }
+        .cta-section p {
+            font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.5rem;
+            line-height: 1.7; color: rgba(255,255,255,0.9);
+        }
+
+        @media (max-width: 968px) {
+            .hero-headline { font-size: 2.5rem; }
+            .focus-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 640px) {
+            .hero-headline { font-size: 2rem; }
+            .section-headline { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Greg Fraser</a>
+            <ul class="nav-links">
+                <li><a href="coaching.html">Coaching</a></li>
+                <li><a href="advising.html" class="active">Advising</a></li>
+                <li><a href="coaching.html#about">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-eyebrow">Advising</div>
+            <h1 class="hero-headline">Strategic Partner for Founders and Product Leaders</h1>
+            <p class="hero-subheadline">Accelerate impact for you or your product leader with coaching and strategic guidance</p>
+            <p class="hero-description">What you need is an experienced partner who's been in the trenches, someone who can provide both developmental coaching and tactical guidance to accelerate results.</p>
+            <p class="hero-description">I combine executive coaching with pragmatic advising, drawing on 20+ years of experience, including serving as a 3x CPO. I help clarify strategy, build strong product teams, drive cross-functional alignment, and deliver measurable results that accelerate growth and increase organizational velocity.</p>
+            <a href="contact.html" class="cta-button">Let's Talk</a>
+        </div>
+    </section>
+
+    <section class="partnership">
+        <div class="section-container">
+            <h2 class="section-headline">Experienced Guidance</h2>
+            <div class="partnership-text">
+                <p>I help founders and product leaders make better decisions and drive the strategy and operational excellence that accelerates growth and maximizes your product investment, whether you're seeking support for yourself or your team.</p>
+                
+                <p>My approach draws on 20+ years of product leadership, including three Chief Product Officer roles where I led through multiple exits and scaled teams from 1 to 20+. I've navigated the challenges you're facing.</p>
+                
+                <p>I tailor my work to meet your most urgent needs. I help you sharpen prioritization, build alignment across your organization, and maintain focus on what drives impact. Sometimes that means working directly with you or your product leader on strategy and customer discovery. Other times it means helping build the team structure, operational processes, and cross-functional collaboration needed to execute at scale. I enable your teams to connect the dots, see patterns, and identify the quickest path to success, which reduces costly detours and accelerates time-to-impact.</p>
+                
+                <p>This is a strategic investment in your product organization. It combines the long-term benefits of leadership development with the immediate impact of tactical expertise. You accelerate growth while building sustainable capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="results">
+        <div class="section-container">
+            <h2 class="section-headline">Proven Results</h2>
+            <div class="results-intro">
+                I've helped product organizations achieve measurable business impact, run product training, and coached a variety of leaders.
+            </div>
+            
+            <div class="companies-section">
+                <h3>Business Impact:</h3>
+                <div class="company-item">• <strong>3x revenue growth</strong> at a turnaround</div>
+                <div class="company-item">• <strong>2x user adoption rates</strong> through effective discovery and prioritization frameworks</div>
+                <div class="company-item">• <strong>Successful new product launches</strong> using proven development processes and strategy</div>
+                <div class="company-item">• <strong>Fast invalidation</strong> of poor-fit opportunities saving months of wasted effort and resources</div>
+                <div class="company-item">• <strong>Scaled teams</strong> from scratch to high-performing organizations of 20+ people</div>
+                <div class="company-item">• <strong>Strengthened cross-functional collaboration</strong> between Product, Engineering, Sales, Marketing, and Customer Success, eliminating bottlenecks</div>
+                
+                <h3 style="margin-top: 2rem;">Product Training:</h3>
+                <div class="company-item">• Co-led 10-week Product Management Fundamentals course for Kyndryl (IBM)</div>
+                
+                <h3 style="margin-top: 2rem;">Coaching:</h3>
+                <p style="margin-top: 1rem; margin-bottom: 1rem; color: #2C3E50;">I've coached leaders across:</p>
+                <div class="company-item">• <strong>Roles:</strong> Co-Founder, CPO, CTO, GM, VP/SVP, Director, Group PMs</div>
+                <div class="company-item">• <strong>Functions:</strong> Product, Engineering, Operations, Marketing, Sales</div>
+                <div class="company-item">• <strong>Industries:</strong> SaaS (B2B/B2C), Healthcare, Financial Services, E-commerce / Marketplace, Consumer Tech, Logistics, Tech Platforms, Media, Professional Services</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="focus-areas">
+        <div class="section-container">
+            <h2 class="section-headline">Common Focus Areas</h2>
+            <p class="focus-intro">Topics may include:</p>
+            
+            <div class="focus-grid">
+                <div class="focus-category">
+                    <h3>Accelerate Product-Market Fit</h3>
+                    <ul>
+                        <li>Establish customer discovery practices to validate assumptions, reduce risk, and avoid costly product development on the wrong opportunities</li>
+                        <li>Prioritize opportunities and systematically test hypotheses to build evidence-based strategy</li>
+                        <li>Navigate the path to product-market fit faster and with less capital burn</li>
+                    </ul>
+                </div>
+
+                <div class="focus-category">
+                    <h3>Build Strategic Foundation</h3>
+                    <ul>
+                        <li>Align your organization around your product vision, strategy, and positioning</li>
+                        <li>Implement goal-setting frameworks (OKRs) that drive alignment and measurable results across the organization, reducing wasted effort on misaligned priorities</li>
+                        <li>Develop clear roadmaps, stakeholder communication, and frameworks for handling feature requests</li>
+                    </ul>
+                </div>
+
+                <div class="focus-category">
+                    <h3>Drive Operational Excellence</h3>
+                    <ul>
+                        <li>Establish strong operational processes that accelerate growth and agility without slowing execution</li>
+                        <li>Create decision-making frameworks that reduce bottlenecks and increase velocity, so teams ship faster and respond to market changes quickly</li>
+                        <li>Foster a product mindset, a culture of outcome-driven agile / lean practices, and effective decision-making</li>
+                    </ul>
+                </div>
+
+                <div class="focus-category">
+                    <h3>Strengthen Your Team</h3>
+                    <ul>
+                        <li>Design the right team structure, roles, and capabilities to support accelerated growth while avoiding costly mis-hires and organizational churn</li>
+                        <li>Improve hiring and development of product managers to build leverage and reduce your personal bottlenecks</li>
+                        <li>Cultivate collaborative, empowered, and inspired teams with clear roles, responsibilities, and decision authority</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="difference">
+        <div class="section-container">
+            <h2 class="section-headline">Coaching + Strategic Guidance</h2>
+            <div class="difference-text">
+                <p>My primary approach is executive coaching: developing discernment, self-awareness, and sustainable leadership capabilities through facilitative questions and reflective inquiry. This creates deep, lasting transformation.</p>
+                
+                <p>Some clients also seek direct tactical guidance on product strategy, team structure, or operational processes to accelerate execution on time-sensitive business challenges. When that's the case, I can integrate strategic advising and proven frameworks alongside the coaching work. I lead with experience and perspective, not theory. I've sat in your product leader's seat and navigated these challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="section-container">
+            <h2 class="section-headline">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">How is this different from executive coaching?</div>
+                    <div class="faq-answer">
+                        <p>My primary approach is executive coaching, which develops leaders through facilitative questions and creates lasting transformation.</p>
+                        <p>This offering is for clients who also seek direct tactical guidance on specific challenges, such as designing team structures, establishing discovery frameworks, or implementing OKRs. In those situations, I integrate strategic advising and proven processes based on 20+ years as a product executive.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Who is this for?</div>
+                    <div class="faq-answer">
+                        <p>This is ideal for:</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                            <li><strong>Founders</strong> who want coaching plus guidance on product strategy, team structure, or operational processes</li>
+                            <li><strong>Product leaders</strong> seeking coaching plus tactical guidance on challenges like establishing discovery practices, implementing OKRs, or scaling their teams</li>
+                            <li><strong>Early-stage companies</strong> (seed to Series B+) navigating transitions like achieving product-market fit, scaling teams, or building operational excellence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do you balance advising vs. coaching?</div>
+                    <div class="faq-answer">
+                        <p>I lead with coaching as the foundation for developing your leader's discernment and capabilities. I add strategic advising when you need proven frameworks for specific tactical challenges like discovery practices, team structure, or OKRs. We'll agree upfront on the right balance and adjust as your priorities evolve.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can this work remotely?</div>
+                    <div class="faq-answer">
+                        <p>Yes. All sessions are remote via video. I've successfully worked across time zones and continents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="section-container">
+            <h2 class="section-headline">Ready to Accelerate Your Product Organization?</h2>
+            <p>If you or your product leader is seeking coaching and strategic guidance to accelerate results, let's talk.</p>
+            <p>I offer a complimentary discovery call to understand your business challenges and development needs, explore whether support makes sense for your situation, and determine if we're the right fit to work together.</p>
+            <p style="margin-bottom: 1rem;">No pressure, no obligation—just an honest conversation about where you are and where you want to go.</p>
+            <a href="contact.html" class="cta-button">Let's Talk</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Fraser - Executive Coach for Product Leaders & Tech Executives</title>
+    <meta name="description" content="Executive coaching for product leaders and tech executives. I help ambitious leaders lead with confidence, clarity, and authenticity. 3x CPO with 20+ years experience. Trusted by Google, Uber, Amazon.">
+    <meta name="keywords" content="executive coach, product leadership coaching, tech executive coaching, CPO coach, product management coach">
+    <meta name="author" content="Greg Fraser">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Greg Fraser - Executive Coach for Product Leaders">
+    <meta property="og:description" content="Executive coaching for product leaders and tech executives. Lead with confidence, clarity, and authenticity.">
+    <meta property="og:url" content="https://gregfraser.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greg Fraser - Executive Coach">
+    <meta name="twitter:description" content="Executive coaching for product leaders and tech executives.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: white;
+            border-top: 4px solid #1E3A5F;
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 1000; padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { 
+            font-size: 1.5rem; font-weight: 700; 
+            color: #1E3A5F; text-decoration: none; 
+        }
+        
+        .nav-links { 
+            display: flex; gap: 2rem; list-style: none; 
+            align-items: center;
+        }
+        
+        .nav-links a { 
+            color: #2C3E50; text-decoration: none; 
+            font-weight: 500; transition: color 0.3s; 
+        }
+        
+        .nav-links a:hover { color: #D46B56; }
+
+        .nav-links a.active {
+            color: #1E3A5F;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* CTA Button styling for Contact nav item */
+        .nav-links .nav-cta {
+            background: #D46B56; color: white;
+            padding: 0.6rem 1.5rem; border-radius: 6px;
+            font-weight: 600; transition: all 0.3s;
+        }
+
+        .nav-links .nav-cta:hover {
+            background: #C05A48; color: white;
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            margin-top: 80px; min-height: 65vh; display: flex; align-items: center;
+            background: linear-gradient(135deg, #1E3A5F 0%, #152B45 100%);
+            color: white;
+        }
+
+        .hero-container {
+            max-width: 1200px; margin: 0 auto; padding: 2rem 2rem;
+            display: grid; grid-template-columns: 1.2fr 1fr; 
+            gap: 4rem; align-items: center;
+        }
+
+        .hero-content {
+            text-align: left;
+        }
+
+        .hero-headline {
+            font-size: 3.5rem; font-weight: 700; line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subheadline {
+            font-size: 1.5rem; margin-bottom: 3rem;
+            color: rgba(255,255,255,0.9); line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex; gap: 1.5rem; justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame {
+            width: 100%; max-width: 400px; aspect-ratio: 3/4;
+            border-radius: 16px; overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            background: #e0e0e0; display: flex; align-items: center;
+            justify-content: center; color: #999; font-size: 1rem;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            display: inline-block; background: #D46B56; color: white;
+            padding: 1.2rem 3rem; border-radius: 8px; text-decoration: none;
+            font-weight: 600; font-size: 1.1rem; transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(212, 107, 86, 0.25);
+        }
+
+        .cta-button:hover {
+            background: #C05A48; transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 107, 86, 0.35);
+        }
+
+        .cta-button-secondary {
+            background: transparent; border: 2px solid white;
+            color: white;
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.9);
+        }
+
+        .trust-bar {
+            padding: 2rem 0; background: white;
+        }
+
+        .trust-label {
+            font-size: 0.9rem; font-weight: 600; color: #1E3A5F;
+            text-transform: uppercase; letter-spacing: 1px;
+            margin-bottom: 1.5rem; text-align: center;
+        }
+
+        .company-logos {
+            display: flex; justify-content: center; align-items: center;
+            gap: 3rem; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;
+        }
+
+        .company-logo {
+            font-size: 1.3rem; font-weight: 700; color: #6C757D;
+            opacity: 0.8;
+        }
+
+        .services {
+            padding: 6rem 0; background: #F5F7FA;
+        }
+
+        .section-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+        }
+
+        .section-headline {
+            font-size: 2.5rem; font-weight: 700; color: #1E3A5F;
+            margin-bottom: 1rem; text-align: center;
+        }
+
+        .section-intro {
+            text-align: center; max-width: 800px; margin: 0 auto 4rem;
+            font-size: 1.2rem; line-height: 1.7; color: #2C3E50;
+        }
+
+        .services-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 3rem; max-width: 1100px; margin: 0 auto;
+        }
+
+        .service-card {
+            background: white; padding: 3rem; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-icon {
+            font-size: 3rem; margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: #1E3A5F; font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #2C3E50; line-height: 1.8;
+            margin-bottom: 2rem; font-size: 1.05rem;
+        }
+
+        .service-link {
+            color: #D46B56; text-decoration: none;
+            font-weight: 600; font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .service-link:hover {
+            color: #C05A48;
+        }
+
+        .about-preview {
+            padding: 6rem 0; background: #F5F7FA;
+        }
+
+        .about-content {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 4rem; align-items: center; max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .about-photo {
+            width: 100%; max-width: 400px; margin: 0 auto;
+            aspect-ratio: 3/4; border-radius: 12px;
+            overflow: hidden; box-shadow: 0 10px 40px rgba(30, 58, 95, 0.15);
+            background: #e0e0e0; display: flex;
+            align-items: center; justify-content: center;
+            color: #999;
+        }
+
+        .about-text h2 {
+            color: #1E3A5F; font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: #2C3E50; line-height: 1.8;
+            margin-bottom: 1.5rem; font-size: 1.1rem;
+        }
+
+        .cta-final {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #1E3A5F 0%, #152B45 100%);
+            color: white; text-align: center;
+        }
+
+        .cta-final h2 {
+            font-size: 2.5rem; margin-bottom: 1.5rem;
+        }
+
+        .cta-final p {
+            font-size: 1.2rem; max-width: 700px; margin: 0 auto 2.5rem;
+            line-height: 1.7; color: rgba(255,255,255,0.9);
+        }
+
+        @media (max-width: 968px) {
+            .hero-headline { font-size: 2.5rem; }
+            .hero-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content { text-align: center; }
+            .cta-buttons { justify-content: center; }
+            .services-grid { grid-template-columns: 1fr; }
+            .about-content { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 640px) {
+            .hero-headline { font-size: 2rem; }
+            .section-headline { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Greg Fraser</a>
+            <ul class="nav-links">
+                <li><a href="coaching.html">Coaching</a></li>
+                <li><a href="advising.html">Advising</a></li>
+                <li><a href="coaching.html#about">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Leading Is Lonely. You Don't Have to Figure It Out Alone.</h1>
+                <p class="hero-subheadline">Executive coaching for product leaders and tech executives who want to lead with greater confidence, clarity, and authenticity.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button">Let's Talk</a>
+                    <a href="coaching.html" class="cta-button cta-button-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="photo-frame">[Your Professional Photo]</div>
+        </div>
+    </section>
+
+    <section class="trust-bar">
+        <div class="section-container">
+            <div class="trust-label">Trusted by leaders at</div>
+            <div class="company-logos">
+                <span class="company-logo">Google</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Uber</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Amazon</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Adobe</span>
+                <span class="company-logo">•</span>
+                <span class="company-logo">Dropbox</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-photo">[Your Professional Photo]</div>
+                
+                <div class="about-text">
+                    <h2>I've Been in Your Shoes</h2>
+                    <p>I'm Greg Fraser, a certified <a href="coaching.html" style="color: #D46B56; text-decoration: none; font-weight: 600;">executive coach</a> and <a href="advising.html" style="color: #D46B56; text-decoration: none; font-weight: 600;">advisor</a> with 20+ years of tech leadership experience. I've navigated the pressure, complexity, and loneliness of executive leadership because I've lived it as a 3x Chief Product Officer.</p>
+                    <p>I bring the rare combination of deep operational experience, a Wharton MBA, and certified coach training. I understand what it takes to lead, scale, and thrive—not just in theory, but from doing it myself.</p>
+                    <p>I'm warm and supportive, yet playfully provocative. I'll challenge you with humor and honesty, because real growth happens when you feel both challenged and supported.</p>
+                    <a href="coaching.html#about" class="service-link">Learn More About My Background →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="section-container">
+            <h2>Ready to Lead with Greater Impact?</h2>
+            <p>Let's explore if we're a good fit. I offer a complimentary discovery call where we'll discuss your challenges, explore how coaching could support you, and determine if we're the right match.</p>
+            <a href="contact.html" class="cta-button">Let's Talk</a>
+        </div>
+    </section>
+</body>
+</html>
