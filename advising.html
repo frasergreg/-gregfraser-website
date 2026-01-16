@@ -26,7 +26,6 @@
         nav {
             position: fixed; top: 0; width: 100%;
             background: white;
-            border-top: 4px solid #1E3A5F;
             border-bottom: 1px solid #e5e5e5;
             z-index: 1000; padding: 1rem 0;
         }
@@ -48,7 +47,11 @@
             font-weight: 500; transition: color 0.3s; 
         }
         
-        .nav-links a:hover { color: #D46B56; }
+        .nav-links a:hover { 
+            color: #1E3A5F;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
 
         .nav-links a.active {
             color: #1E3A5F;
@@ -69,7 +72,7 @@
         }
 
         .hero {
-            margin-top: 80px; min-height: 60vh; display: flex; align-items: center;
+            margin-top: 76px; min-height: 60vh; display: flex; align-items: center;
             background: #E8EAED;
         }
 
@@ -237,11 +240,18 @@
         @media (max-width: 968px) {
             .hero-headline { font-size: 2.5rem; }
             .focus-grid { grid-template-columns: 1fr; }
+            .nav-container { padding: 0 1rem; }
+            .nav-links { gap: 1rem; font-size: 0.9rem; }
         }
 
         @media (max-width: 640px) {
             .hero-headline { font-size: 2rem; }
             .section-headline { font-size: 2rem; }
+            .nav-links .nav-cta { 
+                padding: 0.5rem 1.2rem; 
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
