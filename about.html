@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Coaching - Greg Fraser | For Executives and Product Leaders</title>
+    <meta name="description" content="1:1 executive coaching for executives and product leaders. Build trust-based relationships, navigate complexity with confidence, and lead authentically. 3x CPO, Wharton MBA, certified coach.">
+    <meta name="keywords" content="executive coaching, leadership coaching, executive coach, product leader coach, CPO coaching, CEO coaching, founder coaching">
+    <meta name="author" content="Greg Fraser">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Executive Coaching - Greg Fraser">
+    <meta property="og:description" content="1:1 executive coaching for executives and product leaders. Lead with confidence, clarity, and authenticity.">
+    <meta property="og:url" content="https://gregfraser.com/coaching.html">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: white;
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 1000; padding: 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1E3A5F; text-decoration: none; }
+        
+        .nav-links { 
+            display: flex; gap: 2rem; list-style: none; 
+            align-items: center;
+        }
+        
+        .nav-links a { 
+            color: #2C3E50; text-decoration: none; 
+            font-weight: 500; transition: color 0.3s; 
+        }
+        
+        .nav-links a:hover { 
+            color: #1E3A5F;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .nav-links a.active {
+            color: #1E3A5F;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* CTA Button styling for Contact nav item */
+        .nav-links .nav-cta {
+            background: #D46B56; color: white;
+            padding: 0.6rem 1.5rem; border-radius: 6px;
+            font-weight: 600; transition: all 0.3s;
+        }
+
+        .nav-links .nav-cta:hover {
+            background: #C05A48; color: white;
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            margin-top: 76px; min-height: 32vh; display: flex; align-items: center;
+            background: linear-gradient(135deg, #1E3A5F 0%, #152B45 100%);
+            color: white; padding: 3rem 0;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.9rem; font-weight: 600; color: #D46B56;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;
+        }
+
+        .hero-container {
+            max-width: 1200px; margin: 0 auto; padding: 0 3rem;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.9rem; font-weight: 600; color: #D46B56;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;
+        }
+
+        .hero-headline {
+            font-size: 3rem; font-weight: 700; line-height: 1.2;
+            color: white; margin-bottom: 1.5rem;
+        }
+
+        .hero-subheadline {
+            font-size: 1.3rem; color: white; margin-bottom: 2rem; font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block; background: #D46B56; color: white;
+            padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none;
+            font-weight: 600; font-size: 1.1rem; transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(212, 107, 86, 0.25);
+        }
+
+        .cta-button:hover {
+            background: #C05A48; transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 107, 86, 0.35);
+        }
+
+        .photo-frame {
+            width: 100%; max-width: 350px; aspect-ratio: 3/4;
+            border-radius: 16px; overflow: hidden;
+            box-shadow: 0 20px 60px rgba(30, 58, 95, 0.15);
+            background: #e0e0e0; display: flex; align-items: center;
+            justify-content: center; color: #999;
+        }
+
+        section { padding: 4rem 0; }
+        .section-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .section-headline {
+            font-size: 2.5rem; font-weight: 700; color: #1E3A5F;
+            margin-bottom: 3rem; text-align: center;
+        }
+
+        .trust-bar {
+            padding: 1.5rem 0; background: white; border-bottom: 1px solid #e5e5e5;
+        }
+
+        .trust-label {
+            font-size: 0.9rem; font-weight: 600; color: #1E3A5F;
+            text-transform: uppercase; letter-spacing: 1px;
+            margin-bottom: 1rem; text-align: center;
+        }
+
+        .company-logos {
+            display: flex; justify-content: center; align-items: center;
+            gap: 3rem; flex-wrap: wrap;
+        }
+
+        .company-logo {
+            font-size: 1.3rem; font-weight: 700; color: #6C757D;
+            opacity: 0.8; transition: all 0.3s;
+        }
+
+        .company-logo:hover { color: #1E3A5F; opacity: 1; }
+
+        .challenge { background: #F5F7FA; }
+        
+        .challenge-intro {
+            font-size: 1.15rem; color: #2C3E50; margin-bottom: 2.5rem;
+            line-height: 1.8; max-width: 900px; margin-left: auto;
+            margin-right: auto; text-align: center;
+        }
+
+        .challenge-list {
+            display: grid; gap: 2rem; max-width: 900px; margin: 0 auto 3rem;
+        }
+
+        .challenge-item {
+            padding: 1.5rem; background: white; border-radius: 8px;
+            border-left: 4px solid #D46B56; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .challenge-closing {
+            font-size: 1.15rem; color: #2C3E50; line-height: 1.8;
+            max-width: 900px; margin: 0 auto; text-align: center;
+        }
+
+        .challenge-closing strong { color: #1E3A5F; }
+
+        .transformation { background: white; }
+        
+        .transformation-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 3rem; margin-bottom: 4rem;
+        }
+
+        .transformation-icon {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, #D46B56 0%, #C05A48 100%);
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 1.5rem;
+            font-size: 2rem; color: white;
+        }
+
+        .transformation-card { text-align: center; }
+        .transformation-card h3 {
+            font-size: 1.5rem; color: #1E3A5F; margin-bottom: 1rem;
+        }
+        
+        .transformation-card ul { list-style: none; text-align: left; }
+        .transformation-card li {
+            color: #2C3E50; margin-bottom: 0.75rem;
+            padding-left: 1.5rem; position: relative; line-height: 1.6;
+        }
+        
+        .transformation-card li:before {
+            content: "•"; color: #D46B56; font-weight: bold;
+            position: absolute; left: 0;
+        }
+
+        .experience-text {
+            max-width: 900px; margin: 0 auto; font-size: 1.05rem;
+            line-height: 1.8; color: #2C3E50;
+        }
+        
+        .experience-text p { margin-bottom: 1.5rem; }
+
+        .testimonials { background: #1E3A5F; color: white; }
+        
+        .testimonial-featured {
+            background: white; padding: 3rem; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 900px; margin: 0 auto 4rem;
+            border-left: 4px solid #D46B56;
+        }
+
+        .testimonial-quote {
+            font-size: 1.25rem; line-height: 1.8; color: #2C3E50;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600; color: #1E3A5F; font-size: 1.1rem;
+        }
+
+        .testimonial-role { color: #6C757D; font-size: 0.95rem; }
+
+        .section-headline.testimonial-headline {
+            color: white;
+        }
+
+        .testimonial-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white; padding: 2rem; border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .testimonial-card .testimonial-quote { font-size: 1rem; }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1E3A5F 0%, #152B45 100%);
+            color: white; text-align: center;
+        }
+
+        .cta-section .section-headline { color: white; }
+        .cta-section p {
+            font-size: 1.15rem; max-width: 700px; margin: 0 auto 2.5rem;
+            line-height: 1.7; color: rgba(255,255,255,0.9);
+        }
+
+        .how-it-works { background: white; }
+        
+        .how-intro {
+            max-width: 900px; margin: 0 auto 3rem;
+            font-size: 1.1rem; line-height: 1.8; color: #2C3E50;
+        }
+
+        .focus-areas-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 3rem; max-width: 1100px; margin: 0 auto 4rem;
+        }
+
+        .focus-category {
+            background: #F5F7FA; padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .focus-category h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .focus-category ul { list-style: none; }
+
+        .focus-category li {
+            color: #2C3E50; margin-bottom: 0.75rem;
+            padding-left: 1.5rem; position: relative; line-height: 1.6;
+        }
+
+        .focus-category li:before {
+            content: "•"; color: #D46B56; font-weight: bold;
+            position: absolute; left: 0;
+        }
+
+        .how-works-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem; max-width: 1100px; margin: 0 auto 3rem;
+        }
+
+        .how-works-item h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .how-works-item p {
+            color: #2C3E50; line-height: 1.7;
+        }
+
+        .how-works-container {
+            background: #F5F7FA;
+            padding: 5rem 0;
+            margin: 5rem 0 0;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            width: 100vw;
+        }
+
+        .how-works-container > * {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .how-works-headline {
+            color: #1E3A5F; font-size: 2rem;
+            margin-bottom: 3rem; text-align: center;
+            font-weight: 600;
+        }
+
+        .approach-text {
+            max-width: 900px; margin: 0 auto;
+            font-size: 1.05rem; line-height: 1.8; color: #2C3E50;
+        }
+
+        .approach-text h3 {
+            color: #1E3A5F; font-size: 1.5rem;
+            margin: 2.5rem 0 1rem; font-weight: 600;
+        }
+
+        .approach-text h3:first-child { margin-top: 0; }
+
+        .approach-text p { margin-bottom: 1.5rem; }
+
+        .investment-note {
+            max-width: 900px !important; 
+            margin: 3rem auto 0;
+            padding: 2rem; 
+            background: white; 
+            border-radius: 8px;
+            border-left: 4px solid #D46B56;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .investment-note h3 {
+            color: #1E3A5F; font-size: 1.3rem;
+            margin-bottom: 1rem; font-weight: 600;
+        }
+
+        .investment-note p {
+            color: #2C3E50; line-height: 1.7; margin-bottom: 0;
+        }
+
+        .about { background: white; scroll-margin-top: 100px; padding-top: 6rem !important; }
+        
+        .about-container {
+            max-width: 1200px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 2fr;
+            gap: 4rem; align-items: start;
+        }
+
+        .about-photo {
+            width: 100%; max-width: 400px;
+            aspect-ratio: 3/4; border-radius: 12px;
+            overflow: hidden; box-shadow: 0 10px 40px rgba(30, 58, 95, 0.15);
+            background: #e0e0e0; display: flex;
+            align-items: center; justify-content: center;
+            color: #999; font-size: 1rem;
+        }
+
+        .about-content h3 {
+            color: #1E3A5F; font-size: 1.5rem;
+            margin: 2rem 0 1rem; font-weight: 600;
+        }
+
+        .about-content h3:first-child { margin-top: 0; }
+
+        .about-content p {
+            color: #2C3E50; line-height: 1.8;
+            margin-bottom: 1.5rem; font-size: 1.05rem;
+        }
+
+        .about-content ul {
+            margin: 1rem 0 1.5rem; padding-left: 1.5rem;
+        }
+
+        .about-content li {
+            color: #2C3E50; line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+
+        .credentials {
+            background: #F5F7FA; padding: 2rem;
+            border-radius: 8px; margin: 2rem 0;
+            border-left: 4px solid #D46B56;
+        }
+
+        .credentials h4 {
+            color: #1E3A5F; font-size: 1.1rem;
+            margin-bottom: 0.75rem; font-weight: 600;
+        }
+
+        .credentials ul {
+            margin: 0.5rem 0; padding-left: 1.5rem;
+        }
+
+        .faq { background: #F5F7FA; }
+        
+        .faq-list {
+            max-width: 900px; margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white; padding: 2rem; margin-bottom: 1.5rem;
+            border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            color: #1E3A5F; font-size: 1.2rem;
+            font-weight: 600; margin-bottom: 1rem;
+        }
+
+        .faq-answer {
+            color: #2C3E50; line-height: 1.7;
+        }
+
+        .faq-answer p { margin-bottom: 1rem; }
+        .faq-answer p:last-child { margin-bottom: 0; }
+
+        .faq-answer ul {
+            margin: 1rem 0; padding-left: 1.5rem;
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.5rem; line-height: 1.6;
+        }
+
+        @media (max-width: 968px) {
+            .hero-container { grid-template-columns: 1fr; padding: 0 3rem; }
+            .hero-headline { font-size: 2.5rem; }
+            .transformation-grid { grid-template-columns: 1fr; }
+            .focus-areas-grid { grid-template-columns: 1fr; }
+            .how-works-grid { grid-template-columns: 1fr; }
+            .about-container { grid-template-columns: 1fr; }
+            .company-logos { gap: 1.5rem; }
+            .nav-container { padding: 0 1rem; }
+            .nav-links { gap: 1rem; font-size: 0.9rem; }
+        }
+
+        @media (max-width: 640px) {
+            .hero { margin-top: 70px; padding: 2.5rem 0; }
+            .hero-container { padding: 0 1.5rem; }
+            .hero-headline { font-size: 2rem; }
+            .section-headline { font-size: 2rem; }
+            .company-logos { gap: 1rem; font-size: 1rem; }
+            .section-container { padding: 0 1.5rem; }
+            .about-container h2 { padding-top: 1rem; }
+            .about-container h2.section-headline { margin-bottom: 1.5rem; }
+            .logo { font-size: 1.25rem; }
+            .nav-container { padding: 0 1rem; gap: 0.5rem; }
+            .nav-links { gap: 0.75rem; }
+            .nav-links .nav-cta { 
+                padding: 0.5rem 1rem; 
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Greg Fraser</a>
+            <ul class="nav-links">
+                <li><a href="coaching.html">Coaching</a></li>
+                <li><a href="advising.html">Advising</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="section-headline">I've Been in Your Shoes</h2>
+            
+            <div class="about-container">
+                <div class="about-photo">
+                    <img src="images/greg-about.jpg" alt="Greg Fraser" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                </div>
+                
+                <div class="about-content">
+                    <p>I'm Greg Fraser, a certified executive coach with 20+ years of tech leadership experience. I know what it's like to navigate the pressure, complexity, and loneliness of executive leadership because I've lived it.</p>
+
+                    <h3>What Makes Me Different</h3>
+                    <p>I bring the rare combination of deep operational experience as a 3x Chief Product Officer, Wharton MBA, and certified coach. I understand strategy, cross-functional collaboration, team building, and what it takes to scale. Not just in theory, but from doing it myself.</p>
+                    <p>I'm a change catalyst who helps leaders identify their true goals, root challenges, and limiting assumptions, and respond to feedback.</p>
+
+                    <h3>My Coaching Philosophy</h3>
+                    <p>I help ambitious leaders grow their authentic leadership and become more resourceful. I believe every leader has the wisdom and capacity inside them to solve their biggest challenges. My role is to help you access that wisdom, see your blind spots, evolve your mindset, and take bold action.</p>
+                    <p>I'm holistic in my approach: mind and body, professional and personal. I'm warm and supportive, yet playfully provocative—I'll challenge you with humor and honesty. Because real growth happens when you feel both challenged and supported.</p>
+
+                    <div class="credentials">
+                        <h3 style="margin-top: 0; font-size: 1.3rem;">My Background</h3>
+                        
+                        <h4>Executive Experience:</h4>
+                        <ul>
+                            <li>3x Chief Product Officer for high-growth companies (multiple exits)</li>
+                            <li>Business operator who's led Product, Marketing, Data Analytics, Operations, and GM roles</li>
+                            <li>Coached leaders at Google, Uber, Amazon, Fortune 500 companies, and leading startups and scale-ups</li>
+                            <li>VC & PE experience with Bessemer Venture Partners, GV (Google Ventures), First Round Capital, and IAC</li>
+                        </ul>
+
+                        <h4>Education:</h4>
+                        <ul>
+                            <li>Wharton MBA</li>
+                        </ul>
+
+                        <h4>Coaching Training & Certifications:</h4>
+                        <ul>
+                            <li>Certified Solutions-Focused Organizational Coach from Solutions Academy (at the PCC level)</li>
+                            <li>Co-Active Training Institute (CTI)</li>
+                            <li>Conscious Leadership Group</li>
+                            <li>Positive Intelligence</li>
+                            <li>Nonviolent Communication (NVC)</li>
+                        </ul>
+                    </div>
+
+                    <h3>My Story</h3>
+                    <p>I've spent my career in the trenches of tech leadership. As a 3x Chief Product Officer for B2B SaaS and consumer tech startups and scale-ups, I've led Product, Design, Data Analytics, and Operations through multiple exits. I've also led Product and Marketing initiatives for major clients including Google, Comcast and American Express.</p>
+                    <p>I've experienced the challenges I help clients navigate: the difficult executive relationships, the moments of self-doubt, the stress of high-stakes decisions, and the loneliness at the top. My empathy and positive energy once helped me transform what was my toughest executive relationship into a trusted partnership. In fact, she now serves as one of my professional references.</p>
+                    <p>That personal transformation, and work with my own executive coach, showed me the power of self-awareness, emotional intelligence, and having someone in your corner who truly understands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="section-container">
+            <h2 class="section-headline">Let's Explore Working Together</h2>
+            <p>Schedule a complimentary discovery call to explore how I can support you.</p>
+            <a href="contact.html" class="cta-button">Let's Talk</a>
+        </div>
+    </section>
+
+    
+</body>
+</html>
