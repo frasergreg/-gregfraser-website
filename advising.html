@@ -123,7 +123,7 @@
         
         .partnership-container {
             display: grid;
-            grid-template-columns: 1fr 400px;
+            grid-template-columns: 1fr 350px;
             gap: 4rem;
             align-items: start;
             max-width: 1200px;
@@ -138,6 +138,9 @@
         .partnership-text p { margin-bottom: 1.5rem; }
         
         .partnership-photo {
+            width: 100%;
+            max-width: 350px;
+            aspect-ratio: 3/4;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -145,7 +148,8 @@
         
         .partnership-photo img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             display: block;
         }
 
@@ -262,7 +266,7 @@
             .hero-headline { font-size: 2.5rem; }
             .focus-grid { grid-template-columns: 1fr; }
             .partnership-container { grid-template-columns: 1fr; gap: 2rem; }
-            .partnership-photo { max-width: 400px; margin: 0 auto; }
+            .partnership-photo { max-width: 350px; margin: 0 auto; }
             .nav-container { padding: 0 1rem; }
             .nav-links { gap: 1rem; font-size: 0.9rem; }
         }
