@@ -259,6 +259,13 @@
             display: grid; grid-template-columns: repeat(2, 1fr);
             gap: 2rem; max-width: 1000px; margin: 0 auto;
         }
+        
+        /* Center last card when it's alone on a row (for 5-card layout) */
+        .testimonial-grid > .testimonial-card:nth-child(5):nth-last-child(1) {
+            grid-column: 1 / -1;
+            max-width: 480px;
+            margin: 0 auto;
+        }
 
         .testimonial-card {
             background: white; padding: 2rem; border-radius: 8px;
@@ -493,6 +500,10 @@
             .hero-headline { font-size: 2.5rem; }
             .transformation-grid { grid-template-columns: 1fr; }
             .testimonial-grid { grid-template-columns: 1fr; }
+            .testimonial-grid > .testimonial-card:nth-child(5):nth-last-child(1) {
+                grid-column: auto;
+                max-width: none;
+            }
             .focus-areas-grid { grid-template-columns: 1fr; }
             .how-works-grid { grid-template-columns: 1fr; }
             .about-container { grid-template-columns: 1fr; }
@@ -659,9 +670,9 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-quote">"His warmth, emotional intelligence, and Product Leader's curiosity helped me tackle challenges in team leadership, workload, and promotions—always landing on actionable next steps. I call it my 'work therapy.'"</p>
-                    <div class="testimonial-author">R.M.A.</div>
-                    <div class="testimonial-role">Senior Director of Product</div>
+                    <p class="testimonial-quote">"Working with Greg helped me rethink how I approached leadership challenges. He pushed me to be more honest about what was actually hard, brought clarity where there was spin, and helped me move from over-analysis to action. His style is direct, thoughtful, and well suited to senior leaders balancing a lot at once. Greg turned me from a coaching skeptic into a believer."</p>
+                    <div class="testimonial-author"></div>
+                    <div class="testimonial-role">Head of Product, B2B SaaS</div>
                 </div>
 
                 <div class="testimonial-card">
