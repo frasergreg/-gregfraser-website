@@ -349,7 +349,7 @@
 
         .how-works-grid {
             display: grid; grid-template-columns: repeat(2, 1fr);
-            gap: 2.5rem; max-width: 1100px; margin: 0 auto 3rem;
+            gap: 2.5rem; max-width: 900px; margin: 0 auto 3rem;
         }
 
         .how-works-item h3 {
@@ -506,12 +506,11 @@
 
         @media (max-width: 1100px) {
             .testimonial-grid { 
-                grid-template-columns: 1fr; 
+                grid-template-columns: repeat(2, 1fr); 
             }
             .testimonial-grid > .testimonial-card {
-                grid-column: 1 / -1 !important;
+                grid-column: span 1;
                 width: 100%;
-                max-width: 100%;
             }
         }
 
@@ -520,14 +519,17 @@
             .hero-headline { font-size: 2.5rem; }
             .transformation-grid { grid-template-columns: 1fr; }
             .testimonial-grid { 
-                grid-template-columns: 1fr; 
+                grid-template-columns: repeat(2, 1fr); 
             }
             .testimonial-grid > .testimonial-card {
-                grid-column: 1 / -1 !important;
-                width: 100%;
-                max-width: 100%;
+                grid-column: span 1;
             }
             .focus-areas-grid { grid-template-columns: 1fr; }
+            .focus-areas-grid > .focus-category:nth-child(3):nth-last-child(1) {
+                grid-column: auto;
+                max-width: none;
+                margin: 0;
+            }
             .how-works-grid { grid-template-columns: 1fr; }
             .about-container { grid-template-columns: 1fr; }
             .company-logos { gap: 1.5rem; }
@@ -560,11 +562,8 @@
                 grid-template-columns: 1fr; 
             }
             .testimonial-grid > .testimonial-card {
-                grid-column: 1 / -1 !important;
+                grid-column: 1 / -1;
                 width: 100%;
-                max-width: 100%;
-                margin: 0 auto;
-            }
             }
         }
     </style>
