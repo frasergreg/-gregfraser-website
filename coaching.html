@@ -133,7 +133,7 @@
         }
 
         .trust-bar {
-            padding: 1.5rem 0; background: white; border-bottom: 1px solid #e5e5e5;
+            padding: 1.5rem 0 2.5rem 0; background: white; border-bottom: 1px solid #e5e5e5;
         }
 
         .trust-label {
@@ -144,23 +144,42 @@
 
         .company-logos {
             display: flex; justify-content: center; align-items: center;
-            gap: 3rem; flex-wrap: wrap;
+            gap: 2.5rem; flex-wrap: wrap;
         }
 
         .company-logo {
-            font-size: 1.3rem; font-weight: 700; color: #6C757D;
-            opacity: 0.8; transition: all 0.3s;
+            height: 28px; width: auto;
+            filter: grayscale(100%) brightness(0.45);
+            opacity: 0.7; transition: all 0.3s;
         }
 
-        .company-logo:hover { color: #1E3A5F; opacity: 1; }
+        .company-logo:hover { filter: grayscale(0%) brightness(1); opacity: 1; }
+
+        .vc-logos {
+            display: flex; justify-content: center; align-items: center;
+            gap: 2.5rem; flex-wrap: wrap;
+        }
+
+        .vc-logo {
+            height: 24px; width: auto;
+            filter: grayscale(100%) brightness(0.45);
+            opacity: 0.7; transition: all 0.3s;
+        }
+
+        .vc-logo:hover { filter: grayscale(0%) brightness(1); opacity: 1; }
+
+        .trust-divider {
+            width: 60px; height: 1px; background: #d5d5d5;
+            margin: 1.25rem auto;
+        }
 
         .pull-quote {
             padding: 3rem 0; background: #1E3A5F;
         }
 
         .pull-quote-text {
-            font-size: 1.5rem; font-weight: 500; color: white;
-            line-height: 1.5; max-width: 800px; margin: 0 auto 1rem;
+            font-size: 1.4rem; font-weight: 500; color: white;
+            line-height: 1.6; max-width: 800px; margin: 0 auto 1rem;
             text-align: center;
         }
 
@@ -533,6 +552,9 @@
             .how-works-grid { grid-template-columns: 1fr; }
             .about-container { grid-template-columns: 1fr; }
             .company-logos { gap: 1.5rem; }
+            .company-logo { height: 24px; }
+            .vc-logos { gap: 1.5rem; }
+            .vc-logo { height: 20px; }
             .nav-container { padding: 0 1rem; }
             .nav-links { gap: 1rem; font-size: 0.9rem; }
         }
@@ -542,7 +564,10 @@
             .hero-container { padding: 0 1.5rem; }
             .hero-headline { font-size: 2rem; }
             .section-headline { font-size: 2rem; }
-            .company-logos { gap: 1rem; font-size: 1rem; }
+            .company-logos { gap: 1rem; }
+            .company-logo { height: 20px; }
+            .vc-logos { gap: 1rem; }
+            .vc-logo { height: 16px; }
             .section-container { padding: 0 1.5rem; }
             .about-container h2 { padding-top: 1rem; }
             .about-container h2.section-headline { margin-bottom: 1.5rem; }
@@ -610,15 +635,22 @@
         <div class="section-container">
             <div class="trust-label">Trusted by leaders at</div>
             <div class="company-logos">
-                <span class="company-logo">Google</span>
-                <span class="company-logo">•</span>
-                <span class="company-logo">Uber</span>
-                <span class="company-logo">•</span>
-                <span class="company-logo">Amazon</span>
-                <span class="company-logo">•</span>
-                <span class="company-logo">Adobe</span>
-                <span class="company-logo">•</span>
-                <span class="company-logo">Dropbox</span>
+                <img src="images/logos/google.svg" alt="Google" class="company-logo">
+                <img src="images/logos/amazon.svg" alt="Amazon" class="company-logo">
+                <img src="images/logos/uber.svg" alt="Uber" class="company-logo">
+                <img src="images/logos/adobe.svg" alt="Adobe" class="company-logo">
+                <img src="images/logos/dropbox.svg" alt="Dropbox" class="company-logo">
+                <img src="images/logos/gusto.svg" alt="Gusto" class="company-logo">
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-label">From companies backed by</div>
+            <div class="vc-logos">
+                <img src="images/logos/sequoia.svg" alt="Sequoia Capital" class="vc-logo">
+                <img src="images/logos/ycombinator.svg" alt="Y Combinator" class="vc-logo">
+                <img src="images/logos/gv.svg" alt="GV" class="vc-logo">
+                <img src="images/logos/general-catalyst.svg" alt="General Catalyst" class="vc-logo">
+                <img src="images/logos/bessemer.svg" alt="Bessemer Venture Partners" class="vc-logo">
+                <img src="images/logos/insight-partners.svg" alt="Insight Partners" class="vc-logo">
             </div>
         </div>
     </section>
