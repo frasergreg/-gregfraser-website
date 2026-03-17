@@ -4,8 +4,5 @@
       .dropbox-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.3px; }
     </style>
   </defs>
-  <g>
-    <polygon points="8,12 12,8 12,14 16,10 16,16 12,20 8,16 8,20 4,16 4,10" fill="#1a1a1a"/>
-    <text x="26" y="22" class="dropbox-text" fill="#1a1a1a">Dropbox</text>
-  </g>
+  <text x="8" y="22" class="dropbox-text" fill="#1a1a1a">Dropbox</text>
 </svg>
