@@ -1,8 +1,0 @@
-<svg viewBox="0 0 110 28" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .google-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 24px; font-weight: 700; }
-    </style>
-  </defs>
-  <text x="8" y="22" class="google-text" fill="#1a1a1a">Google</text>
-</svg>
