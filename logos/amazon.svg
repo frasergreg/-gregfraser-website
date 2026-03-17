@@ -1,8 +1,0 @@
-<svg viewBox="0 0 140 28" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .amazon-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
-    </style>
-  </defs>
-  <text x="8" y="22" class="amazon-text" fill="#1a1a1a">amazon</text>
-</svg>
