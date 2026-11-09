@@ -170,7 +170,7 @@
 
         /* Snowflake and a16z: sized, thickened and shaded to match the other logos (grey #555 at rest) */
         .company-logo.logo-snowflake {
-            height: 18px; opacity: 0.667;
+            height: 17px; opacity: 0.667;
             filter: url(#bolden) grayscale(100%) brightness(0.45);
         }
 
@@ -180,12 +180,12 @@
         }
 
         .vc-logo.logo-a16z {
-            height: 22px;
-            filter: url(#bolden-light) grayscale(100%) brightness(0.07);
+            height: 21px;
+            filter: grayscale(100%) brightness(0.2);
         }
 
         .vc-logo.logo-a16z:hover {
-            filter: url(#bolden-light) grayscale(0%) brightness(1);
+            filter: grayscale(0%) brightness(1);
         }
 
         .trust-divider {
@@ -576,7 +576,7 @@
             .vc-logos { gap: 1.5rem; }
             .vc-logo { height: 20px; }
             .company-logo.logo-snowflake { height: 15px; }
-            .vc-logo.logo-a16z { height: 19px; }
+            .vc-logo.logo-a16z { height: 18px; }
             .nav-container { padding: 0 1rem; }
             .nav-links { gap: 1rem; font-size: 0.9rem; }
         }
@@ -590,8 +590,8 @@
             .company-logo { height: 20px; }
             .vc-logos { gap: 1rem; }
             .vc-logo { height: 16px; }
-            .company-logo.logo-snowflake { height: 13px; }
-            .vc-logo.logo-a16z { height: 16px; }
+            .company-logo.logo-snowflake { height: 12px; }
+            .vc-logo.logo-a16z { height: 14px; }
             .section-container { padding: 0 1.5rem; }
             .about-container h2 { padding-top: 1rem; }
             .about-container h2.section-headline { margin-bottom: 1.5rem; }
@@ -629,10 +629,7 @@
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
         <filter id="bolden" x="-5%" y="-5%" width="110%" height="110%">
-            <feMorphology operator="dilate" radius="0.25"/>
-        </filter>
-        <filter id="bolden-light" x="-5%" y="-5%" width="110%" height="110%">
-            <feMorphology operator="dilate" radius="0.2"/>
+            <feMorphology operator="dilate" radius="0.35"/>
         </filter>
     </svg>
     <nav>
