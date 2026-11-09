@@ -186,8 +186,9 @@
             filter: url(#bolden-light) grayscale(0%) brightness(1);
         }
 
-        /* a16z is a two-line wordmark, so it needs more height to stay readable */
-        .vc-logo.logo-a16z { height: 36px; }
+        /* Logo sizes tuned so Snowflake and a16z match the visual weight of the others */
+        .company-logo.logo-snowflake { height: 23px; }
+        .vc-logo.logo-a16z { height: 28px; }
 
         .trust-divider {
             width: 60px; height: 1px; background: #d5d5d5;
@@ -576,7 +577,8 @@
             .company-logo { height: 24px; }
             .vc-logos { gap: 1.5rem; }
             .vc-logo { height: 20px; }
-            .vc-logo.logo-a16z { height: 30px; }
+            .company-logo.logo-snowflake { height: 20px; }
+            .vc-logo.logo-a16z { height: 24px; }
             .nav-container { padding: 0 1rem; }
             .nav-links { gap: 1rem; font-size: 0.9rem; }
         }
@@ -590,7 +592,8 @@
             .company-logo { height: 20px; }
             .vc-logos { gap: 1rem; }
             .vc-logo { height: 16px; }
-            .vc-logo.logo-a16z { height: 26px; }
+            .company-logo.logo-snowflake { height: 17px; }
+            .vc-logo.logo-a16z { height: 20px; }
             .section-container { padding: 0 1.5rem; }
             .about-container h2 { padding-top: 1rem; }
             .about-container h2.section-headline { margin-bottom: 1.5rem; }
@@ -628,10 +631,10 @@
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
         <filter id="bolden" x="-5%" y="-5%" width="110%" height="110%">
-            <feMorphology operator="dilate" radius="0.6"/>
+            <feMorphology operator="dilate" radius="0.5"/>
         </filter>
         <filter id="bolden-light" x="-5%" y="-5%" width="110%" height="110%">
-            <feMorphology operator="dilate" radius="0.35"/>
+            <feMorphology operator="dilate" radius="0.3"/>
         </filter>
     </svg>
     <nav>
@@ -669,7 +672,7 @@
                 <img src="images/logos/google.svg" alt="Google" class="company-logo">
                 <img src="images/logos/amazon.svg" alt="Amazon" class="company-logo">
                 <img src="images/logos/uber.svg" alt="Uber" class="company-logo">
-                <img src="images/logos/snowflake.svg" alt="Snowflake" class="company-logo logo-bold">
+                <img src="images/logos/snowflake.svg" alt="Snowflake" class="company-logo logo-bold logo-snowflake">
                 <img src="images/logos/adobe.svg" alt="Adobe" class="company-logo">
                 <img src="images/logos/gusto.svg" alt="Gusto" class="company-logo">
             </div>
