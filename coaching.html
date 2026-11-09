@@ -168,27 +168,25 @@
 
         .vc-logo:hover { filter: grayscale(0%) brightness(1); opacity: 1; }
 
-        /* Thicker strokes for thin logos (Snowflake, a16z). Same grayscale values as the other logos. */
-        .company-logo.logo-bold, .vc-logo.logo-bold {
+        /* Snowflake and a16z: sized, thickened and shaded to match the other logos (grey #555 at rest) */
+        .company-logo.logo-snowflake {
+            height: 18px; opacity: 0.667;
             filter: url(#bolden) grayscale(100%) brightness(0.45);
         }
 
-        .company-logo.logo-bold:hover, .vc-logo.logo-bold:hover {
+        .company-logo.logo-snowflake:hover {
+            opacity: 1;
             filter: url(#bolden) grayscale(0%) brightness(1);
         }
 
-        /* a16z is already heavier, so it gets a lighter boost */
         .vc-logo.logo-a16z {
-            filter: url(#bolden-light) grayscale(100%) brightness(0.45);
+            height: 22px;
+            filter: url(#bolden-light) grayscale(100%) brightness(0.07);
         }
 
         .vc-logo.logo-a16z:hover {
             filter: url(#bolden-light) grayscale(0%) brightness(1);
         }
-
-        /* Logo sizes tuned so Snowflake and a16z match the visual weight of the others */
-        .company-logo.logo-snowflake { height: 23px; }
-        .vc-logo.logo-a16z { height: 28px; }
 
         .trust-divider {
             width: 60px; height: 1px; background: #d5d5d5;
@@ -577,8 +575,8 @@
             .company-logo { height: 24px; }
             .vc-logos { gap: 1.5rem; }
             .vc-logo { height: 20px; }
-            .company-logo.logo-snowflake { height: 20px; }
-            .vc-logo.logo-a16z { height: 24px; }
+            .company-logo.logo-snowflake { height: 15px; }
+            .vc-logo.logo-a16z { height: 19px; }
             .nav-container { padding: 0 1rem; }
             .nav-links { gap: 1rem; font-size: 0.9rem; }
         }
@@ -592,8 +590,8 @@
             .company-logo { height: 20px; }
             .vc-logos { gap: 1rem; }
             .vc-logo { height: 16px; }
-            .company-logo.logo-snowflake { height: 17px; }
-            .vc-logo.logo-a16z { height: 20px; }
+            .company-logo.logo-snowflake { height: 13px; }
+            .vc-logo.logo-a16z { height: 16px; }
             .section-container { padding: 0 1.5rem; }
             .about-container h2 { padding-top: 1rem; }
             .about-container h2.section-headline { margin-bottom: 1.5rem; }
@@ -631,10 +629,10 @@
 <body>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
         <filter id="bolden" x="-5%" y="-5%" width="110%" height="110%">
-            <feMorphology operator="dilate" radius="0.5"/>
+            <feMorphology operator="dilate" radius="0.25"/>
         </filter>
         <filter id="bolden-light" x="-5%" y="-5%" width="110%" height="110%">
-            <feMorphology operator="dilate" radius="0.3"/>
+            <feMorphology operator="dilate" radius="0.2"/>
         </filter>
     </svg>
     <nav>
@@ -672,7 +670,7 @@
                 <img src="images/logos/google.svg" alt="Google" class="company-logo">
                 <img src="images/logos/amazon.svg" alt="Amazon" class="company-logo">
                 <img src="images/logos/uber.svg" alt="Uber" class="company-logo">
-                <img src="images/logos/snowflake.svg" alt="Snowflake" class="company-logo logo-bold logo-snowflake">
+                <img src="images/logos/snowflake.svg" alt="Snowflake" class="company-logo logo-snowflake">
                 <img src="images/logos/adobe.svg" alt="Adobe" class="company-logo">
                 <img src="images/logos/gusto.svg" alt="Gusto" class="company-logo">
             </div>
